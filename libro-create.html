@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Administrar libros</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Bootstrap CSS v5.2.1 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+
+	<body>
+		<header id="header"></header>
+
+		<main>
+			<div class="container form-container text-center mt-4" id="app">
+				<form>
+					<h1 class="mb-4 pt-4">Registrar Libro</h1>
+
+					<div class="mb-3 input-container text-center">
+						<label for="titulo">Titulo</label>
+						<input type="text" name="titulo" id="titulo" v-model="titulo" />
+					</div>
+
+					<div class="mb-3 input-container">
+						<label for="autor">Autor</label>
+						<input type="text" name="autor" id="autor" v-model="autor" />
+					</div>
+
+					<div class="mb-3 input-container text-center">
+						<label for="anio">Año</label>
+						<input type="number" name="anio" id="anio" v-model="anio" />
+					</div>
+
+					<div class="mb-3 input-container">
+						<label for="genero">Género</label>
+						<input type="text" name="genero" id="genero" v-model="genero" />
+					</div>
+
+					<div class="mb-3 input-container">
+						<label for="editorial">Editorial</label>
+						<input
+							type="text"
+							name="editorial"
+							id="editorial"
+							v-model="editorial"
+						/>
+					</div>
+
+					<div class="mb-3 select-state">
+						<label for="estado" class="text-center">Estado</label>
+						<select
+							id="opcion"
+							name="opcion"
+							class="form-select text-center"
+							v-model="estado"
+						>
+							<option value="disponible">disponible</option>
+							<option value="no disponible">no disponible</option>
+						</select>
+					</div>
+					<div class="text-center pb-2">
+						<button
+							type="button"
+							class="btn btn-success mt-2"
+							v-on:click="grabar()"
+						>
+							Grabar
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer></footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+			integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+			crossorigin="anonymous"
+		></script>
+		<script src="/scripts/main.js"></script>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="/scripts/biblioteca.js"></script>
+	</body>
+</html>

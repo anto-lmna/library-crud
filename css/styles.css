@@ -1,0 +1,103 @@
+body {
+	background: #758881;
+	background: linear-gradient(135deg, #9de6cc, #d5acdf);
+}
+
+/* nav */
+
+.nav-title {
+	font-size: 30px;
+	color: white;
+}
+
+.book-admin {
+	color: #9de6cc;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.book-admin:hover {
+	color: rgb(40, 156, 131);
+}
+
+.search-form {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+	width: 300px;
+}
+/* libro-create */
+
+.form-container h1 {
+	font-size: 30px;
+}
+.form-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+
+	max-width: 400px;
+	min-width: 40%;
+	border-radius: 15px;
+	padding: 25px;
+
+	background-color: #ffffff;
+}
+
+.form-container form {
+	align-self: center;
+}
+
+input {
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.input-container {
+	display: grid;
+	justify-content: center;
+	place-items: center;
+}
+
+/* biblioteca */
+
+.container {
+	padding: 8px;
+}
+
+.new-icon {
+	font-size: 25px;
+	color: rgb(32, 28, 28);
+}
+
+.new-icon:hover {
+	color: rgb(73, 143, 41);
+}
+
+.btn-update {
+	font-size: 20px;
+}
+
+.btn-delete {
+	cursor: pointer;
+	font-size: 20px;
+}
+.btn-update:hover {
+	color: rgb(70, 221, 78);
+}
+
+.btn-delete:hover {
+	color: red;
+}
+
+.no-found {
+	color: black;
+	background-color: rgb(224, 147, 147);
+}
