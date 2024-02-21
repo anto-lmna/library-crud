@@ -1,4 +1,3 @@
-## Trabajo Final - Codo a Codo -
+# Proyecto Final de Codo a Codo
 
-Front End: https://bibliocrud.netlify.app/biblioteca.html
-
+Trabajo práctico integrador 
