@@ -1,5 +1,3 @@
-# Proyecto Final de Codo a Codo
-
-Trabajo práctico integrador 
+# CRUD Libreria
 
 https://bibliocrud.netlify.app/biblioteca.html
